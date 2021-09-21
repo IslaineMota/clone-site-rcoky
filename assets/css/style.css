@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;800;900&display=swap');
 * {
     box-sizing: unset !important;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body,
@@ -18,10 +20,14 @@ body {
 }
 .container-presentation {
     background-image:url(../img/s1\ ft1.png);
+    background-size: 1350px 630px;
     background-repeat:no-repeat;
     background-position: center center;
+    height: 100vh;
     color: white;
+    
 }
+
 nav {
     height: 80px;
     background-color: rgb(0, 0, 0, 0);
@@ -36,14 +42,16 @@ nav a {
     color:#FFF;
     float: right;
     padding-left: 28px;
-
+}
+nav a:hover {
+    color: #1cd4e9;
 }
 
 .nav-bar-links{
     display: inline;
     float: right;
-    margin-right: 90px;
-    margin-top: 30px;
+    margin-right: 110px;
+    margin-top: 30px; 
 }
 
 #logo-header {
@@ -51,13 +59,42 @@ nav a {
     height: 40px;
     margin-top: 20px;
     margin-left: 90px;
-
 }
+
 .nav-bar {
-    height: 100vh;
     width: 100%;
-    position: relativeb;
-      
+    display: inline-block; 
+}
+
+.apresentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.title-presentation{
+    font-size: 54px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.description-presentation{
+    font-size: 20px;
+    font-weight: 400;
+    width: 47vw;
+    margin-top: 5px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#style-span-description-presentation{
+    color: #efe60b;
 }
 
 .fullcontent {
@@ -65,7 +102,18 @@ nav a {
     width: 100%; 
     position: relative;
     overflow: hidden;
+}
 
+.button-contact-presentation{
+    background-color: #1cd4e9;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    width: 18em;
+    margin-top: 25px;
 }
 
 /* .firstbar {
@@ -114,7 +162,7 @@ nav a {
 .content-footer{
     height: 100vh;
     width: 100%;
-    background-color: rgb(243, 243, 24);
+    background-color: #efe60b;
     display: flex;
     align-items: center
 
@@ -172,6 +220,6 @@ nav a {
     color: white;
     font-weight: bold;
     border: none;
-    background-color: rgb(11, 233, 233);
+    background-color:  #1cd4e9;;
 
 }
