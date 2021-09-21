@@ -1,0 +1,177 @@
+* {
+    box-sizing: unset !important;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-y: scroll;
+    width: 100% !important;
+    position: relative;
+    font-family: "Poppins", sans-serif !important;
+    height: 100vh;
+}
+.container-presentation {
+    background-image:url(../img/s1\ ft1.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    color: white;
+}
+nav {
+    height: 80px;
+    background-color: rgb(0, 0, 0, 0);
+    width: 100%;
+}
+
+nav a {
+    text-decoration:none;
+    font-size:14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color:#FFF;
+    float: right;
+    padding-left: 28px;
+
+}
+
+.nav-bar-links{
+    display: inline;
+    float: right;
+    margin-right: 90px;
+    margin-top: 30px;
+}
+
+#logo-header {
+    width: 161px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 90px;
+
+}
+.nav-bar {
+    height: 100vh;
+    width: 100%;
+    position: relativeb;
+      
+}
+
+.fullcontent {
+    z-index: 1; 
+    width: 100%; 
+    position: relative;
+    overflow: hidden;
+
+}
+
+/* .firstbar {
+    z-index: 1;
+    height: 200vh;
+    width: 35vw;
+    background-color: yellow;
+    transform: rotate(28deg);
+    position: absolute;
+    top: -18%;
+    left: -25%;
+}
+
+
+.secondbar {
+    z-index: 1;
+    height: 500vh;
+    width: 25%;
+    background-color: gray;
+    transform: rotate(60deg);
+    position: absolute;
+    left: 48%;
+    top: -60%;
+    right: 100%;
+} */
+
+.content {
+    z-index: 2;
+    position: relative;
+    height: 100vh;
+}
+
+.about {
+    display: flex;
+}
+.section-test-tyle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.test-style-diferenciais{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.content-footer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(243, 243, 24);
+    display: flex;
+    align-items: center
+
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    color: white;
+    padding: 40px 80px;
+    height: 75vh;
+    width: 100%;
+    display: block;
+}
+
+.content-social-networks {
+    width: 30vw;
+    float: left;
+}
+
+.facebook-linkedin{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+
+.content-registration-send-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    width: 30vw;
+    float: right;
+    padding: 20px;
+ }
+
+ footer, input, button {
+    height: 40px;
+    width: 400px;
+    margin-bottom: 20px;
+ }
+
+.content-input-message{
+    display: flex;
+    text-align: start;
+}
+ .input-message {
+    height: 120px;
+}
+
+.button-message-send{
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(11, 233, 233);
+
+}
