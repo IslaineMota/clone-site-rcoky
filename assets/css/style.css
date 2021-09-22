@@ -185,8 +185,6 @@ nav a:hover {
     width: 100%;
     display: flex;
     align-items: center;
-    
-    
 }
 
 .content-services-title {
@@ -234,7 +232,6 @@ nav a:hover {
     text-align: center;
     padding-right: 40px;
     padding-left: 40px;
-    
 }
 
 #services-information-performance {
@@ -269,13 +266,75 @@ nav a:hover {
     padding-left: 40px;
 }
 
-.about {
-    display: flex;
+.content-differentials{
+    z-index: 2;
+    position: relative;
+    height: 100vh;
+}
+.content-differentials-title{
+    margin-left: 90px;
+    font-size: 35px;
+    font-weight: 800;
 }
 
-.test-style-diferenciais{
+.content-differentials-information{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    margin-left: 90px;
+}
+
+.first-differentials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../img/s4\ ft1.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-size: cover;
+    width: 20vw;
+    padding: 40px;
+    color: white;
+    font-size: 18px;
+    font-family: 600;
+}
+
+.second-differentials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../img/s4\ ft2.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-size: cover;
+    width: 20vw;
+    padding: 40px;
+    color: white;
+    font-size: 18px;
+    font-family: 600;
+}
+
+.third-differentials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../img/s4\ ft3.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-size: cover;
+    width: 20vw;
+    padding: 40px;
+    color: white;
+    font-size: 18px;
+    font-family: 600;
 }
 
 .content-footer{
