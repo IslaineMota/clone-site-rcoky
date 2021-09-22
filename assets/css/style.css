@@ -18,14 +18,14 @@ body {
     font-family: "Poppins", sans-serif !important;
     height: 100vh;
 }
+
 .container-presentation {
     background-image:url(../img/s1\ ft1.png);
     background-size: 1350px 630px;
     background-repeat:no-repeat;
     background-position: center center;
     height: 100vh;
-    color: white;
-    
+    color: white;  
 }
 
 nav {
@@ -97,13 +97,6 @@ nav a:hover {
     color: #efe60b;
 }
 
-.fullcontent {
-    z-index: 1; 
-    width: 100%; 
-    position: relative;
-    overflow: hidden;
-}
-
 .button-contact-presentation{
     background-color: #1cd4e9;
     color: white;
@@ -116,6 +109,13 @@ nav a:hover {
     margin-top: 25px;
 }
 
+.fullcontent {
+    z-index: 1; 
+    width: 100%; 
+    position: relative;
+    overflow: hidden;
+}
+
 /* .firstbar {
     z-index: 1;
     height: 200vh;
@@ -126,7 +126,6 @@ nav a:hover {
     top: -18%;
     left: -25%;
 }
-
 
 .secondbar {
     z-index: 1;
@@ -146,6 +145,40 @@ nav a:hover {
     height: 100vh;
 }
 
+.content-about {
+    z-index: 2;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+    
+}
+
+.content-about-title-page {
+    margin-top: -500px;
+    margin-left: 90px;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.content-about-paragraph{
+    width: 60vw;
+    height: 25vw;
+    padding: 30px;
+    box-shadow: 0px 0px 10px -2px rgba(0,0,0,.6);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-top: 60px;
+    margin-left: -190px;
+}
+
+#content-about-bold-paragraph{
+    font-weight: bold;
+}
 .about {
     display: flex;
 }
