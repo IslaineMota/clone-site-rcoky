@@ -116,28 +116,28 @@ nav a:hover {
     overflow: hidden;
 }
 
-/* .firstbar {
+.firstbar {
     z-index: 1;
     height: 200vh;
-    width: 35vw;
-    background-color: yellow;
-    transform: rotate(28deg);
+    width: 50vw;
+    background-color: rgb(239, 230, 11);
+    transform: rotate(43deg);
     position: absolute;
-    top: -18%;
-    left: -25%;
+    top: -25%;
+    left: -25.5%;
 }
 
 .secondbar {
     z-index: 1;
     height: 500vh;
-    width: 25%;
-    background-color: gray;
-    transform: rotate(60deg);
+    width: 30%;
+    background-color: rgb(78, 76, 74);
+    transform: rotate(40deg);
     position: absolute;
-    left: 48%;
-    top: -60%;
-    right: 100%;
-} */
+    left: 61%;
+    top: -29%;
+    
+}
 
 .content {
     z-index: 2;
@@ -172,6 +172,7 @@ nav a:hover {
     float: left;
     margin-top: 60px;
     margin-left: -190px;
+    background-color: white;
 }
 
 #content-about-bold-paragraph{
