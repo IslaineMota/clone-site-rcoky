@@ -342,13 +342,14 @@ nav a:hover {
     width: 100%;
     background-color: #efe60b;
     display: flex;
-    align-items: center
+    align-items: center;
+    font-size: 14px;
 }
 
 .footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: black;
+    background-color: rgb(23, 21, 21);
     color: white;
     padding: 40px 80px;
     height: 75vh;
@@ -364,29 +365,85 @@ nav a:hover {
 .facebook-linkedin{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
+    align-items: center;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
 }
 
+.img-social-media-footer {
+    height: auto; 
+    width: auto; 
+    max-width: 15px; 
+    max-height: 15px;
+} 
+
+.content-contact-social-media-footer {
+    display: flex;
+    width: 85%;
+    height: 40px;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paragraph-social-media-footer {
+    margin-left: -35px;
+}
+
+.content-address-footer{
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#paragraph-address-footer {
+    margin-left: 10px;
+}
+
+#first-paragraph-footer {
+    color:white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#second-paragraph-footer {
+    color:#efe60b;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#third-paragraph-footer {
+    color:#1cd4e9;
+    font-size: 16px;
+    font-weight: 600;
+}
 
 .content-registration-send-message {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: gray;
+    background-color: rgb(161, 161, 161);
     width: 30vw;
     float: right;
     padding: 20px;
- }
+}
 
  footer, input, button {
+    border: none;
     height: 40px;
     width: 400px;
     margin-bottom: 20px;
  }
 
+
 .content-input-message{
     display: flex;
     text-align: start;
 }
+
  .input-message {
     height: 120px;
 }
@@ -396,7 +453,5 @@ nav a:hover {
     margin-top: 10px;
     color: white;
     font-weight: bold;
-    border: none;
-    background-color:  #1cd4e9;;
-
+    background-color:  #1cd4e9;
 }
