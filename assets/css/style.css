@@ -21,7 +21,7 @@ body {
 
 .container-presentation {
     background-image:url(../img/s1\ ft1.png);
-    background-size: 1350px 630px;
+    background-size: cover;
     background-repeat:no-repeat;
     background-position: center center;
     height: 100vh;
@@ -424,10 +424,6 @@ nav a:hover {
     align-items: center;
 }
 
-.paragraph-social-media-footer {
-    margin-left: -35px;
-}
-
 .content-address-footer{
     font-size: 12px;
     width: 100%;
@@ -468,20 +464,26 @@ nav a:hover {
     padding: 20px;
 }
 
- footer, input, button {
+ footer, input, button, select {
     border: none;
     height: 40px;
-    width: 400px;
+    width: 100%;
     margin-bottom: 20px;
+    font-size: 16px;
+    padding: 0;
  }
 
-
-.content-input-message{
-    display: flex;
-    text-align: start;
+ footer input:focus { 
+    outline: none; 
+    border: 2px solid rgb(28, 212, 233); 
 }
 
- .input-message {
+ #investment:focus {
+    outline: none; 
+    border: 2px solid rgb(28, 212, 233); 
+ }
+
+.input-message {
     height: 120px;
 }
 
@@ -490,5 +492,12 @@ nav a:hover {
     margin-top: 10px;
     color: white;
     font-weight: bold;
-    background-color:  #1cd4e9;
+    background-color: rgb(28, 212, 233);
+    letter-spacing: 1px;
+    box-sizing: content-box;
+}
+
+#button-message-send:hover{
+    background-color: rgb(9, 151, 167);
+    transition: all 0.5s linear;
 }

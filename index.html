@@ -124,10 +124,10 @@
                     <section>
                         <div class="content-contact-social-media-footer"> 
                             <img class="img-social-media-footer" src="./assets/img/mail.svg">
-                            <p class="paragraph-social-media-footer">contato@rocky.ag</p>
+                            <p>contato@rocky.ag</p>
                             <p> | </p>
                             <img class="img-social-media-footer" src="./assets/img/phone.svg">
-                            <p class="paragraph-social-media-footer">(15) 3321-1105</p>
+                            <p>(15) 3321-1105</p>
                         </div>
                         <div class="content-address-footer">
                         <img class="img-social-media-footer" src="./assets/img/map-pin.svg">                 
@@ -146,15 +146,17 @@
                     <form action="https://formspree.io/f/moqyrzle" method="POST">
                         <input type="text" placeholder="Nome" name="fullname" id="fullname" required>
                         <input type="text" placeholder="E-mail" name="email" id="email" required>
-                        <input type="text" placeholder="Investimento mensal" name="investment" id="investment" required>
+                        <select id="investment" name="select" required>
+                            <option value="" disabled selected>Investimento mensal</option>
+                            <option value="baixo">Baixo</option>
+                            <option value="médio">Médio</option>
+                            <option value="alto">Alto</option>
+                          </select>
                         <input class="input-message" type="text" placeholder="Mensagem" name="message" id="message" required>
                         <button type="submit" id="button-message-send">ENVIAR MENSAGEM</button>
                     </form>
                 </div>
             </footer>
-<!--         <div class="content">
-            <h1>teste</h1>
-        </div> -->
     </div>
     <script src="./assets/js/main.js"></script>
 </body>
