@@ -143,21 +143,13 @@
                     </section>
                 </div>
                 <div class="content-registration-send-message">
-                    <section>
-                        <input type="text" placeholder="Nome">
-                    </section>
-                    <section>
-                        <input type="text" placeholder="E-mail">
-                    </section>
-                    <section>
-                        <input type="text" placeholder="Investimento mensal">
-                    </section>
-                    <section class="content-input-message">
-                        <input class="input-message" type="text" placeholder="Mensagem">
-                    </section>
-                    <section>
-                        <button class="button-message-send">ENVIAR MENSAGEM</button>
-                    </section>
+                    <form action="https://formspree.io/f/moqyrzle" method="POST">
+                        <input type="text" placeholder="Nome" name="fullname" id="fullname" required>
+                        <input type="text" placeholder="E-mail" name="email" id="email" required>
+                        <input type="text" placeholder="Investimento mensal" name="investment" id="investment" required>
+                        <input class="input-message" type="text" placeholder="Mensagem" name="message" id="message" required>
+                        <button type="submit" id="button-message-send">ENVIAR MENSAGEM</button>
+                    </form>
                 </div>
             </footer>
 <!--         <div class="content">
