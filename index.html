@@ -13,17 +13,18 @@
 </head>
 <body>
     <div class="container-presentation">
-        <header class="nav-bar" >
-            <nav>
-                <img id="logo-header" src="./assets/img/logo_white.png" title= "Rocky" alt="Logomarca Rocky">
-                <div class="nav-bar-links">
-                    <a href="#about">BLOG</a>
-                    <a id="contact-header" href="#contact">CONTATO</a>
-                    <a href="#work-with-us">TRABALHE CONOSCO</a>
-                    <a href="#differentials">DIFERENCIAIS</a>
-                    <a href="#services">SERVIÇOS</a>
-                    <a href="#about">SOBRE A ROCKY</a>
-                </div>
+        <header id="header" class="nav-bar" > 
+            <button id="menu"></button>    
+            <a><img id="logo-header" src="./assets/img/logo_white.png" title= "Rocky" alt="Logomarca Rocky"></a>
+            <nav id="nav">
+                    <ul id="links-menu" class="nav-bar-links">
+                    <li><a href="#blog">SOBRE A ROCKY</a></li>
+                    <li><a href="#services">SERVIÇOS</a></li>
+                    <li><a href="#differentials">DIFERENCIAIS</a></li>
+                    <li><a href="#work-with-us">TRABALHE CONOSCO</a></li>
+                    <li><a id="contact-header" href="#footer">CONTATO</a></li>
+                    <li><a href="#about">BLOG</a></li>
+                </ul>
             </nav>
         </header>
         <div class="apresentation">
@@ -35,7 +36,7 @@
                 Lorem ipsum dolor consectetur<span id="style-span-description-presentation">  adipisicing elit consectetur</span> adipisicing elit. Ad  Dicta, nulla? Sit amet.
             </p>
         </section> 
-            <button class="button-contact-presentation">ENTRE EM CONTATO AGORA</button>
+            <a href="#footer" class="button-contact-presentation">ENTRE EM CONTATO AGORA</a>
     </div>
     </div>
     <div class="fullcontent" >
@@ -46,8 +47,8 @@
                  <h2>SOBRE</h2>
             </section>
             <section class='content-about-paragraph'>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut ut quod voluptatibus molestias cumque accusantium modi eligendi sit voluptates adipisci rerum, optio, repellendus, ipsam veritatis officia tempora dignissimos nobis commodi.</p>
-                <p id="content-about-bold-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta mollitia iure dignissimos eius doloribus dolores pariatur expedita soluta? Aliquam explicabo et expedita quam facere nesciunt tempora consequatur unde, magnam minus.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Ipsam veritatis officia tempora dignissimos nobis commodi.</p>
+                <p id="content-about-bold-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta mollitia iure dignissimos eius tempora consequatur unde, magnam minus.</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic a consequuntur quia eos nobis temporibus unde numquam! Veritatis quis facilis, possimus officiis tenetur optio mollitia dolorum obcaecati placeat totam nulla?</p>
             </section>
            
@@ -75,41 +76,40 @@
                 </section>
             </div>
             </div>
-            <div class="content-differentials">
+            <div id="differentials" class="content-differentials">
                 <section class="content-differentials-title">
                     <h2>DIFERENCIAIS</h2>
                 </section>
                 <div class="content-differentials-information">
-                    <div class="first-differentials">
+                    <div class="cards-differentials" id="first-differentials">
                         <section>
-                            <img src="./assets/img/medal.png">
+                            <img src="./assets/img/selo-garantia.png">
                         </section>
                         <section>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, fugiat id! Iste cum ipsa nam deleniti! Consequatur libero est possimus aperiam nihil voluptatum, assumenda excepturi ut provident nostrum incidunt quisquam.</p>
                         </section>
                     </div>
-                    <div class="second-differentials">
+                    <div class="cards-differentials" id="second-differentials">
                         <section>
-                            <img src="./assets/img/medal.png">
+                            <img src="./assets/img/selo-garantia.png">
                         </section>
                         <section>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aspernatur dolorem dolores expedita recusandae aliquam explicabo, vel earum vero itaque veritatis obcaecati molestias eligendi at repudiandae minus sint labore nulla?</p>
-                        </section>
-                    </div>
-                    <div class="third-differentials">
-                        <section>
-                            <img src="./assets/img/medal.png">
-                        </section>
-                        <section>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quibusdam quas voluptas quo deserunt vitae esse reprehenderit ipsum. Non tenetur quae harum aperiam odio cum at mollitia fugit eum dolorem.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, fugiat id! Iste cum ipsa nam deleniti! Consequatur libero est possimus aperiam nihil voluptatum, assumenda excepturi ut provident nostrum incidunt quisquam.</p>
                         </section>
                     </div>
-            
+                    <div class="cards-differentials" id="third-differentials">
+                        <section>
+                            <img src="./assets/img/selo-garantia.png">
+                        </section>
+                        <section>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, fugiat id! Iste cum ipsa nam deleniti! Consequatur libero est possimus aperiam nihil voluptatum, assumenda excepturi ut provident nostrum incidunt quisquam.</p>
+                        </section>
+                    </div>
                     </div>
                 </div>
         </div>
         <div class="content-footer">
-            <footer class="footer">
+            <footer id="footer" class="footer">
                 <div class="content-social-networks">
                     <section class="facebook-linkedin">
                         <img src="./assets/img/logo_white.png">
@@ -134,16 +134,17 @@
                         <p id="paragraph-address-footer">R. Romeu do Nascimento, 247 - Jardim Portal da Colina, Sorocaba - SP, 18047-410 , 2º andar</p>
                         </div>
 <!-- informações de contato         
--->                                </section>
+-->                 </section>
                     <section>
-                        <p id="first-paragraph-footer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat porro repellat quam quaerat eum harum amet cum nostrum, fugit qui a eaque consectetur.</p>
-                        <p id="second-paragraph-footer">
+                        <p class="paragraph-footer" id="first-paragraph-footer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat porro repellat quam quaerat eum harum amet cum nostrum, fugit qui a eaque consectetur.</p>
+                        <p class="paragraph-footer" id="second-paragraph-footer">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat porro repellat quam quaerat eum harum amet cum nostrum, fugit qui a eaque consectetur.</p>
-                        <p id="third-paragraph-footer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat porro repellat quam quaerat eum harum amet cum nostrum, fugit qui a eaque consectetur.</p>
+                        <p class="paragraph-footer" id="third-paragraph-footer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat porro repellat quam quaerat eum harum amet cum nostrum, fugit qui a eaque consectetur.</p>
                     </section>
                 </div>
                 <div class="content-registration-send-message">
-                    <form action="https://formspree.io/f/moqyrzle" method="POST">
+                    <span id="form-status"></span>
+                    <form id="form">
                         <input type="text" placeholder="Nome" name="fullname" id="fullname" required>
                         <input type="text" placeholder="E-mail" name="email" id="email" required>
                         <select id="investment" name="select" required>
@@ -158,6 +159,8 @@
                 </div>
             </footer>
     </div>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/horizontalMenu.js"></script>
+    <script src="./assets/js/sendForm.js"></script>
+    <script src="./assets/js/buttonMenu.js"></script>
 </body>
 </html>

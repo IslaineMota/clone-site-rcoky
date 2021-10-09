@@ -28,12 +28,9 @@ body {
     color: white;  
 }
 
-#contact-header {
-    color: #efe60b;
-}
-
-#contact-header:hover {
-    color: #1cd4e9;
+header{
+    background-color: transparent;
+    display:flex;
 }
 
 nav {
@@ -41,8 +38,15 @@ nav {
     position: fixed;
     top: 0;
     height: 80px;
-    background-color: rgb(0, 0, 0, 0);
     width: 100%;
+}
+
+#contact-header {
+    color: #efe60b;
+}
+
+#contact-header:hover {
+    color: #1cd4e9;
 }
 
 nav a {
@@ -52,19 +56,22 @@ nav a {
     font-weight: bold;
     color:#FFF;
     float: right;
-    padding-left: 28px;
+    padding: 0.5rem;
 }
+
 nav a:hover {
     color: #1cd4e9;
 }
 
 .nav-scrolling-active {
     z-index: 2;
-    background-color: rgb(0, 0, 0, 1);
+    background-color: black;
+    transition: background-color 0.4s linear;
     position: fixed;
     top: 0;
     height: 80px;
     width: 100%;
+    
 }
 
 .nav-scrolling-active nav a {
@@ -84,65 +91,77 @@ nav a:hover {
 }
 
 .nav-bar-links{
-    display: inline;
+    box-sizing: border-box;
+    display: flex;
+    list-style: none;
     float: right;
-    margin-right: 110px;
-    margin-top: 30px; 
+    gap: 1rem;
+    margin-right: 5%; 
+    margin-top: 2%;  
 }
 
 #logo-header {
+    position: static;
     width: 161px;
     height: 40px;
     margin-top: 20px;
-    margin-left: 90px;
+    margin-left: 40px; 
+}
+    
+#menu {
+    display: none;
 }
 
-.nav-bar {
-    width: 100%;
-    display: inline-block; 
+.nav-bar{
+    display:block;
 }
 
 .apresentation{
     display: flex;
+    position: absolute;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2%;
-    margin-bottom: 1%;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin: 0 auto;
+    top: 15vh;
 }
 
 .title-presentation{
-    font-size: 54px;
+    font-size: 58px;
     font-weight: bolder;
     text-align: center;
     line-height: 1.2;
+    margin: 0 auto;
 }
 
 .description-presentation{
     font-size: 20px;
     font-weight: 400;
     width: 47vw;
-    margin-top: 5px;
     line-height: 1.5;
     text-align: center;
+    margin: 0 auto;
 }
 
 #style-span-description-presentation{
     color: #efe60b;
+    font-weight: 600;
 }
 
 .button-contact-presentation{
+    text-decoration:none;
     background-color: #1cd4e9;
-    color: white;
-    font-size: 16px;
+    color: white; 
+    font-size: 14px;
     letter-spacing: 1px;
     font-weight: bold;
     border: none;
     border-radius: 50px;
-    width: 18em;
-    margin-top: 25px;
+    width: 20VW;
+    height: 3vh;
+    padding: 15px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .fullcontent {
@@ -170,9 +189,8 @@ nav a:hover {
     background-color: rgb(78, 76, 74);
     transform: rotate(40deg);
     position: absolute;
-    left: 61%;
+    left: 64%;
     top: -29%;
-    
 }
 
 .content {
@@ -193,13 +211,13 @@ nav a:hover {
 .content-about-title-page {
     margin-top: -500px;
     margin-left: 90px;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 800;
 }
 
 .content-about-paragraph{
     width: 60vw;
-    height: 25vw;
+    height: auto;
     padding: 30px;
     box-shadow: 0px 0px 10px -2px #0000004D;
     font-size: 20px;
@@ -207,7 +225,7 @@ nav a:hover {
     flex-direction: column;
     float: left;
     margin-top: 60px;
-    margin-left: -190px;
+    margin-left: -170px;
     background-color: white;
 }
 
@@ -227,7 +245,7 @@ nav a:hover {
 .content-services-title {
     margin-top: -600px;
     margin-left: 90px;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 800;
 }
 
@@ -237,70 +255,47 @@ nav a:hover {
     margin: auto;
     width: 100%;
     align-items: center;
-    margin-left: -300px;
+    margin-left: -290px;
 }
 
 .services-information-header {
+    display: flex;
+    justify-content: center;
     color: #efe60b;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     text-align: center;
 }
 
 .services-information {
-    float: left;
     text-align: center;
-    color: white;
+    color: white; text-shadow: black 0.1em 0.1em 0.2em;
     font-size: 18px;
     font-weight: 300 bold;
-}
-
-#services-information-service {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-image: url(../img/s3\ ft1.png);
+    justify-content: center;    
     background-repeat:no-repeat;
     background-position: center center;
     background-size: 100%;
-    background-size: cover;
+    background-size: contain;
     width: 25vw;
-    height: 60vh;
+    height: 70vh;
     text-align: center;
     padding-right: 40px;
     padding-left: 40px;
+}
+
+#services-information-service {
+    background-image: url(../img/s3\ ft1.png);
 }
 
 #services-information-performance {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-image: url(../img/s3\ ft2.png);
-    background-repeat:no-repeat;
-    background-position: center;
-    background-size: 100%;
-    background-size: cover;
-    width: 25vw;
-    height: 60vh;
-    text-align: center;
-    padding-right: 40px;
-    padding-left: 40px;
 }
 
 #services-information-technology{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-image: url(../img/s3\ ft3.png);
-    background-repeat:no-repeat;
-    background-position: center;
-    background-size: 100%;
-    background-size: cover;
-    width: 25vw;
-    height: 60vh;
-    text-align: center;
-    padding-right: 40px;
-    padding-left: 40px;
 }
 
 .content-differentials{
@@ -310,68 +305,52 @@ nav a:hover {
 }
 .content-differentials-title{
     margin-left: 90px;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 800;
 }
 
 .content-differentials-information{
+    display: flex;
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: auto;
     width: 100%;
     align-items: center;
-    margin-left: 90px;
+    margin-left: 60px;
 }
 
-.first-differentials{
-    display: flex;
+.cards-differentials{
+    display: block;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-size: contain;
+    height: 60vh;
+    width: 15vw;
+    padding: 55px;
+    font-size: 18px;
+    color: white; text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#first-differentials{
+    
     background-image: url(../img/s4\ ft1.png);
-    background-repeat:no-repeat;
-    background-position: center center;
-    background-size: 100%;
-    background-size: cover;
-    width: 20vw;
-    padding: 40px;
-    color: white;
-    font-size: 18px;
-    font-family: 600;
+   
 }
 
-.second-differentials{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-image: url(../img/s4\ ft2.png);
-    background-repeat:no-repeat;
-    background-position: center center;
-    background-size: 100%;
-    background-size: cover;
-    width: 20vw;
-    padding: 40px;
-    color: white;
-    font-size: 18px;
-    font-family: 600;
+#second-differentials{
+    
+    background-image:  url(../img/s4\ ft2.png);
+    
 }
 
-.third-differentials{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+#third-differentials{
+   
     background-image: url(../img/s4\ ft3.png);
-    background-repeat:no-repeat;
-    background-position: center center;
-    background-size: 100%;
-    background-size: cover;
-    width: 20vw;
-    padding: 40px;
-    color: white;
-    font-size: 18px;
-    font-family: 600;
+   
 }
 
 .content-footer{
@@ -436,22 +415,21 @@ nav a:hover {
     margin-left: 10px;
 }
 
-#first-paragraph-footer {
-    color:white;
+.paragraph-footer{
     font-size: 16px;
     font-weight: 600;
+}
+
+#first-paragraph-footer {
+    color:white;
 }
 
 #second-paragraph-footer {
     color:#efe60b;
-    font-size: 16px;
-    font-weight: 600;
 }
 
 #third-paragraph-footer {
     color:#1cd4e9;
-    font-size: 16px;
-    font-weight: 600;
 }
 
 .content-registration-send-message {
@@ -500,4 +478,222 @@ nav a:hover {
 #button-message-send:hover{
     background-color: rgb(9, 151, 167);
     transition: all 0.5s linear;
+}
+
+@media (max-width: 1090px) {
+
+    .nav-scrolling-active nav {
+        display: none;
+    }
+
+    nav a{
+        display: none;
+    }
+
+    #logo-header{
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    #header {
+        display: flex; 
+        background-color: rgb(0, 0, 0, 1);
+        align-items: center;
+        justify-content: space-around;
+        z-index: 2;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+    }
+    
+    #menu {
+        display: block;
+        position: absolute;
+        background-image: url(../img/menu.svg);
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position: center center;
+        background-color: transparent;
+        width: 50px;
+        height: 40px;
+        left: 20px;
+        bottom: -10px;
+    }
+
+    .apresentation{
+        margin: 0 auto;
+        top:25vh;
+    }
+
+    .title-presentation{
+        font-size: 26px;
+    }
+
+    .description-presentation{
+        font-size: 14px;
+        width: 80vw;
+    }
+
+    .button-contact-presentation{
+        font-size: 14px;
+        width: 70VW;
+        margin-top: 10%;
+        bottom: 0;
+    }
+
+    .firstbar {
+    display: none;
+    }
+
+    .secondbar {
+    display: none;
+    }
+
+    .content-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+        height: 85vh;
+}
+    
+    .content-about-title-page {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: start;
+        font-size: 16px;
+        margin: 0 auto;
+        background: linear-gradient(white 50%, #efe60b 30%, white 80% );
+    }
+
+    .content-about-paragraph{
+        display: flex;
+        align-items: center;
+        justify-content: stretch;
+        font-size: 10px;
+        margin: 0 auto;
+        width: 65vw;
+        height: auto;
+        font-size: 14px;
+
+    }
+    
+    .content-services{
+        display:inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300%;
+    }
+
+    .content-services-title {
+        font-size: 16px;  
+        margin: 0 auto; 
+        background: linear-gradient(white 50%, #efe60b 30%, white 80% );   
+}
+    
+    .content-services-information{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+    .services-information-header {
+        font-size: 14px;        
+    }
+
+    .services-information {
+        font-size: 14px;
+        width: 60vw;
+        height: 40vh;
+        text-align: center;
+        padding: 90px;
+    }
+
+    .content-differentials{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300%;
+        margin: 0 auto;
+}
+
+    .content-differentials-information{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto auto;
+    }
+    
+    .content-differentials-title{
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        background: linear-gradient(white 50%, #efe60b 30%, white 80% );
+    }
+
+    .cards-differentials{
+        display: flex;
+
+        font-size: 14px;
+        text-align: center;
+        width: 50vw;
+        height: 45vh;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        height: 130vh;
+        padding: 20px;
+        padding-bottom: 0px;
+    }
+
+    .content-footer{
+        height: 150vh;
+        width: 100%;
+    }
+
+    .content-social-networks{
+        display:block;
+        position: absolute;
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        margin-top: 0px;
+        padding: 0px;
+    }
+
+    .content-contact-social-media-footer {
+        font-size: 10px;
+    }
+
+    .content-address-footer{
+        font-size: 10px;
+    }
+    .paragraph-footer{
+        font-size: 12px;
+    }
+   
+    .content-registration-send-message{
+        display: flex;
+        position: relative;
+        margin-top: auto;
+        bottom: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+        align-items: center;
+        background-color: rgb(161, 161, 161);
+        padding: 20px;
+    }
 }
