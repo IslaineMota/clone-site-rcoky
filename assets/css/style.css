@@ -515,7 +515,6 @@ body {
         z-index: 1;
         display: block;
         position: absolute;
-        background-image: url(../img/menu.svg);
         background-size: cover;
         background-repeat:no-repeat;
         background-position: center center;
