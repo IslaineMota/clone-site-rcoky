@@ -62,17 +62,6 @@ nav a:hover {
     color: #1cd4e9;
 }
 
-.nav-scrolling-active {
-    z-index: 2;
-    background-color: black;
-    transition: background-color 0.4s linear;
-    position: fixed;
-    top: 0;
-    height: 80px;
-    width: 100%;
-    
-}
-
 .nav-scrolling-active nav a {
     color:  #1cd4e9;
 }
@@ -87,6 +76,11 @@ nav a:hover {
 
 .nav-scrolling-active #contact-header:hover {
     color:#efe60b;
+}
+
+body {
+    z-index: 10!important;
+    position: relative;
 }
 
 .nav-bar-links{
@@ -481,24 +475,24 @@ nav a:hover {
 
 @media (max-width: 1090px) {
 
-    .nav-scrolling-active nav {
-        display: none;
-    }
-
     #links-menu{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    position: absolute;
-    margin: 0;
-    background-color:black;
-    height: 100vh;
-    padding: 100px 0 0 20px;
-    opacity: 0.95;
-    width: 80vw;
-    visibility: hidden;
-    overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        margin: 0;
+        position: fixed;
+        left: 0;
+        top: 1;
+        bottom: 1;
+        background-color:black;
+        height: 100vh;
+        padding: 100px 0 0 20px;
+        opacity: 0;
+        width: 50vw;
+        overflow-y: hidden;
+        transform: translate3d(-220px, 0, 0);
+        transition: all .5s ease-out; 
     }
 
     #logo-header{
@@ -532,10 +526,16 @@ nav a:hover {
         bottom: -10px;
     }
 
+    .side-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0; 
+    }
     
     #nav.active #links-menu{
-        visibility: visible;
-   
+        opacity: 0.95;
+        transform: translate3d(0px, 0, 0);
         /*  display: flex; */
     }
 
