@@ -34,7 +34,6 @@ header{
 }
 
 nav {
-    z-index: 2;
     position: fixed;
     top: 0;
     height: 80px;
@@ -108,7 +107,7 @@ nav a:hover {
     margin-left: 40px; 
 }
     
-#menu {
+#menu-mobile {
     display: none;
 }
 
@@ -161,7 +160,7 @@ nav a:hover {
     height: 3vh;
     padding: 15px;
     text-align: center;
-    margin: 0 auto;
+    margin: auto auto;
 }
 
 .fullcontent {
@@ -486,8 +485,20 @@ nav a:hover {
         display: none;
     }
 
-    nav a{
-        display: none;
+    #links-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    position: absolute;
+    margin: 0;
+    background-color:black;
+    height: 100vh;
+    padding: 100px 0 0 20px;
+    opacity: 0.95;
+    width: 80vw;
+    visibility: hidden;
+    overflow-y: hidden;
     }
 
     #logo-header{
@@ -506,7 +517,8 @@ nav a:hover {
         height: 70px;
     }
     
-    #menu {
+    #menu-mobile {
+        z-index: 1;
         display: block;
         position: absolute;
         background-image: url(../img/menu.svg);
@@ -514,10 +526,17 @@ nav a:hover {
         background-repeat:no-repeat;
         background-position: center center;
         background-color: transparent;
-        width: 50px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         left: 20px;
         bottom: -10px;
+    }
+
+    
+    #nav.active #links-menu{
+        visibility: visible;
+   
+        /*  display: flex; */
     }
 
     .apresentation{
@@ -572,7 +591,7 @@ nav a:hover {
         align-items: center;
         justify-content: stretch;
         font-size: 10px;
-        margin: 0 auto;
+        margin: auto auto;
         width: 65vw;
         height: auto;
         font-size: 14px;
